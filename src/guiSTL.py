@@ -1,7 +1,6 @@
 # import libraries
 import streamlit as st
 from main import *
-import plotly.graph_objects as go
 
 
 
