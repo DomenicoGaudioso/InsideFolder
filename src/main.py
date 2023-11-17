@@ -1,5 +1,22 @@
 import pandas as pd
 import os
+import streamlit as st
+from PIL import Image
+
+### FUNZIONI ###
+def isertImage(imageName, width = 1350):
+    # Ottieni il percorso assoluto del file corrente
+    current_file_path = os.path.abspath(__file__)
+
+    # Torna indietro di una cartella
+    parent_directory = os.path.dirname(os.path.dirname(current_file_path))
+
+    pathImage = os.path.join(parent_directory, 'image', imageName)
+    image = Image.open(pathImage)
+
+    st.image(image, caption='', width = width)
+
+    return
 
 def elenca_files_cartella(path_cartella):
     elenco_files = []
