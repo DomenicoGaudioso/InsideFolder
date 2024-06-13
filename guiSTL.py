@@ -41,12 +41,12 @@ dirname = os.path.normpath(dirname)
 data, folderName = openFolder(dirname)
 st.title('Make List of Files inside folder')
 
-st.write('Please insert path folder:')
-dirname = st.text_input('Path Folder', '\\')
+#st.write('Please insert path folder:')
+#dirname = st.text_input('Path Folder', '\\')
 #if clicked:
-dirname = os.path.normpath(dirname)
+#dirname = os.path.normpath(dirname)
 
-data, folderName = openFolder(dirname)
+#data, folderName = openFolder(dirname)
 
 option = st.selectbox(
     'Chose the dataframe',
