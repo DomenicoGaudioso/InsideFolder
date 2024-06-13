@@ -67,7 +67,8 @@ def createExcelfromMultipleDataFrame(listDataFrame, listName, path):
 
 def openFolder(pathFolder, type=None):
     # Ottieni la lista di elementi nella cartella (sia cartelle che file)
-    elenco_elementi = os.listdir(r'%s' % pathFolder)
+    pathFolder=pathFolder.encode('unicode_escape').decode()
+    elenco_elementi = os.listdir(pathFolder)
     insedeFolder = []
     insedeFile = []
     # Stampa sia cartelle che file in base al parametro 'type'
