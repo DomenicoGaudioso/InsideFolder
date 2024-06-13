@@ -37,6 +37,7 @@ dirname = st.text_input('Path Folder', '\\')
 
 #if clicked:
 dirname = os.path.normpath(dirname)
+st.write(dirname)
 
 data, folderName = openFolder(dirname)
 st.title('Make List of Files inside folder')
